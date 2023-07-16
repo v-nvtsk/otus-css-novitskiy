@@ -10,11 +10,27 @@
   <title>Mod Studio</title>
 
   <style>
-  html{
-    font-family: 'Roboto';
-    /* font-family: 'Playfair Display'; */
-    /* font-family: 'Bitter'; */
-  }
+    @font-face {
+      font-family: "Roboto";
+      src: local("Roboto"), url("./fonts/Roboto-Bold.ttf") format("truetype");
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: "Bitter";
+      src: local("Bitter"), url("./fonts/Bitter-Bold.ttf") format("truetype");
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: "Playfair Display";
+      src: local("Playfair Display"), url("./fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+      font-weight: bold;
+    }
+
+    html {
+      font-family: "Roboto", sans-serif;
+      /* font-family: 'Playfair Display'; */
+      /* font-family: 'Bitter'; */
+    }
   </style>
 
 </head>
