@@ -382,3 +382,30 @@ section,
 header {
   width: 1440px;
 }
+
+header {
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  gap: 55px;
+  height: 100%;
+}
+
+.nav-menu__link {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-menu__link:hover {
+  text-decoration: underline;
+}
