@@ -409,3 +409,36 @@ header {
 .nav-menu__link:hover {
   text-decoration: underline;
 }
+
+section#hero {
+  height: 630px;
+  background: url("./img/hero-background.jpg") no-repeat center/cover;
+  position: relative;
+}
+
+section#hero .wrapper {
+  width: 690px;
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 110px 67px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section#hero .title {
+  margin-top: 11px;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section#hero .description {
+  margin-top: 14px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
