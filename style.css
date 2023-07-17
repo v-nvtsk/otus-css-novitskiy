@@ -370,3 +370,15 @@ html {
   /* font-family: 'Playfair Display'; */
   /* font-family: 'Bitter'; */
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+}
+section,
+header {
+  width: 1440px;
+}
