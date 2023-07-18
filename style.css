@@ -430,13 +430,12 @@ section#hero .wrapper {
 }
 
 section#hero .title {
-  margin-top: 11px;
+  margin: 0;
   font-family: "Playfair Display";
   font-weight: 500;
   font-size: 86px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 0;
 }
 
 section#hero .description {
