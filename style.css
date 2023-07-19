@@ -413,13 +413,13 @@ header {
   text-decoration: underline;
 }
 
-section#hero {
+section.hero {
   height: 630px;
   background: url("./img/hero-background.jpg") no-repeat center/cover;
   position: relative;
 }
 
-section#hero .wrapper {
+section.hero .wrapper {
   width: 690px;
   position: absolute;
   top: 135px;
@@ -430,7 +430,7 @@ section#hero .wrapper {
   text-align: center;
 }
 
-section#hero .title {
+section.hero .title {
   margin: 0;
   font-family: "Playfair Display";
   font-weight: 500;
@@ -439,7 +439,7 @@ section#hero .title {
   text-align: center;
 }
 
-section#hero .description {
+section.hero .description {
   margin-top: 14px;
   font-size: 20px;
   margin-bottom: 0;
