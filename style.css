@@ -388,18 +388,36 @@ header {
 
 header {
   height: 135px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: right; */
   padding-right: 20px;
+}
+
+.navigation {
+  height: 100%;
 }
 
 .nav-menu {
   list-style-type: none;
-  display: flex;
-  justify-content: right;
-  gap: 55px;
+  margin: 0;
+  /* display: flex; */
+  /* justify-content: right; */
+  /* gap: 55px; */
   height: 100%;
+  text-align: right;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  position: relative;
+  /* margin: 0 auto; */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-menu__item:not(:last-of-type) {
+  margin-right: 55px;
 }
 
 .nav-menu__link {
