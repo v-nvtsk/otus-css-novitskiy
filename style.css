@@ -386,7 +386,7 @@ header {
   width: 100%;
 }
 
-header {
+.main-header {
   height: 135px;
   /* display: flex; */
   /* align-items: center; */
