@@ -417,7 +417,7 @@ header {
 }
 
 .nav-menu__item:not(:last-of-type) {
-  margin-right: 55px;
+  margin-right: 51px;
 }
 
 .nav-menu__link {
