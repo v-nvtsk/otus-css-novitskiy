@@ -4,8 +4,14 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Bitter";
-  src: local("Bitter"), url("./fonts/Bitter-Bold.ttf") format("truetype");
+  font-family: "Bitter-Regular";
+  src: local("Bitter-Regular"),
+    url("./fonts/Bitter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: local("Bitter-Bold"), url("./fonts/Bitter-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
