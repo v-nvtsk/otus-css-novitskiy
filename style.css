@@ -622,6 +622,12 @@ section#designers {
   overflow: hidden;
 }
 
+.gallery__wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
 .gallery__card {
   font-size: 16px;
   height: 520px;
