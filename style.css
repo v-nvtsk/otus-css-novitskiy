@@ -618,7 +618,7 @@ section#designers {
 .gallery {
   display: flex;
   gap: 20px;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   overflow: hidden;
 }
 
