@@ -507,6 +507,9 @@ section.biography {
 
 .person {
   max-width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .person__name {
