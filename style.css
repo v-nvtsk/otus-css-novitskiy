@@ -469,6 +469,20 @@ section.hero .description {
   margin-bottom: 0;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+.section-title--vertical {
+  writing-mode: vertical-lr;
+  transform-origin: center center;
+  transform: rotate(-180deg);
+  left: 50%;
+  top: 0;
+}
+
 section.biography {
   margin-top: 150px;
   max-height: 840px;
@@ -487,11 +501,6 @@ section.biography {
 
 .biography-header > h2 {
   align-self: flex-start;
-  writing-mode: vertical-lr;
-  transform-origin: center center;
-  transform: rotate(-180deg);
-  left: 50%;
-  top: 0;
 }
 
 .biography-image {
