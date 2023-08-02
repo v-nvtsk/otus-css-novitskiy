@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), url("./fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight:500;
+  font-weight: 500;
 }
 
 @font-face {
@@ -601,4 +601,62 @@ section.biography {
   font-family: "Bitter-Regular";
   font-size: 26px;
   font-weight: 400;
+}
+
+section#designers {
+  max-height: 677px;
+  margin-top: 151px;
+  padding-left: 20px;
+}
+
+#designers .section-title {
+  position: relative;
+  left: 121px;
+  display: inline-block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll hidden;
+  padding: 0 20px;
+}
+
+.gallery__wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.gallery__card {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.card__footer {
+  margin-top: 1.5em;
+}
+
+.card__footer > p {
+  margin: 0;
+}
+
+.card__image {
+  display: block;
+  height: 440px;
+}
+
+.designer__name {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.designer__from {
+  font-weight: 400;
+}
+
+.designer__from strong {
+  font-weight: bold;
 }
