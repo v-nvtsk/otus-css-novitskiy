@@ -632,7 +632,6 @@ section#designers {
 
 .gallery__card {
   font-size: 16px;
-  height: 520px;
   flex-shrink: 0;
 }
 
@@ -646,6 +645,7 @@ section#designers {
 
 .card__image {
   display: block;
+  height: 440px;
 }
 
 .designer__name {
