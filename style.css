@@ -17,8 +17,14 @@
 }
 
 @font-face {
-  font-family: "Bitter";
-  src: local("Bitter"), url("./fonts/Bitter-Bold.ttf") format("truetype");
+  font-family: "Bitter-Regular";
+  src: local("Bitter-Regular"),
+    url("./fonts/Bitter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bitter-Bold";
+  src: local("Bitter-Bold"), url("./fonts/Bitter-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
@@ -494,4 +500,105 @@ section.hero .description {
   margin-top: 14px;
   font-size: 20px;
   margin-bottom: 0;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+
+.section-title--vertical {
+  writing-mode: vertical-lr;
+  transform-origin: center center;
+  transform: rotate(-180deg);
+  left: 50%;
+  top: 0;
+}
+
+section.biography {
+  margin-top: 150px;
+  max-height: 840px;
+  display: flex;
+  padding: 0 137px;
+  position: relative;
+}
+
+.biography-header {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.biography-header > h2 {
+  align-self: flex-start;
+}
+
+.biography-image {
+  order: -1;
+  max-width: 50%;
+  max-height: 840px;
+  flex-grow: 0;
+}
+.biography-image > img {
+  display: block;
+  max-height: 100%;
+}
+
+.person {
+  max-width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.person__name {
+  margin-top: 19px;
+  font-family: "Playfair Display";
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.person-role {
+  margin-top: 36px;
+}
+
+.person-role,
+.person__skill-list {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.person__skill-list {
+  padding: 0;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+.person__skill-item {
+  display: inline-block;
+}
+
+.person__skill-item:not(:last-of-type)::after {
+  margin: 3px;
+  display: inline-block;
+  content: "/";
+}
+
+.rectangle-divider {
+  margin-top: 36px;
+  width: 20px;
+  height: 6px;
+  background-color: #0d0d0d;
+}
+
+.person__quote {
+  margin-left: 0;
+  margin-top: 18px;
+  font-family: "Bitter-Regular";
+  font-size: 26px;
+  font-weight: 400;
 }
