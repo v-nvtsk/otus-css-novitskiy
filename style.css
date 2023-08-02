@@ -617,15 +617,17 @@ section#designers {
 
 .gallery {
   display: flex;
-  gap: 20px;
   flex-wrap: nowrap;
   overflow: scroll hidden;
+  padding: 0 20px;
 }
 
 .gallery__wrapper {
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
+  list-style-type: none;
+  padding: 0;
 }
 
 .gallery__card {
