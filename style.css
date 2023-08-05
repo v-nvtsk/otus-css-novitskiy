@@ -606,11 +606,13 @@ section.biography {
 section.testimonials {
   height: 760px;
   padding-left: 139px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  /* justify-content: center; */
+  grid-template-areas: "links image title content";
 }
 
 .testimonials-header {
+  grid-area: "title";
   width: 10%;
   display: flex;
   flex-direction: column;
@@ -623,6 +625,8 @@ section.testimonials {
 }
 
 .testimonials .links {
+  grid-area: "links";
+  width: 98px;
   padding: 0;
   list-style: none;
   order: -1;
@@ -662,12 +666,14 @@ section.testimonials {
 }
 
 .overview-image {
+  grid-area: "image";
   margin-left: 35px;
   order: -1;
   max-height: 100%;
 }
 
 .testimonials-content {
+  grid-area: "content";
   display: flex;
   flex-direction: column;
   justify-content: center;
