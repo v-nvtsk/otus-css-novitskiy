@@ -254,6 +254,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -346,6 +347,7 @@ textarea {
  */
 
 [type="search"] {
+  appearance: textfield;
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -417,9 +419,6 @@ html {
   max-width: 100%;
 }
 
-body {
-  /* max-width: 1440px; */
-}
 section,
 header {
   width: 100%;
