@@ -673,7 +673,7 @@ section.testimonials {
 .testimonials-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   width: 35%;
@@ -681,9 +681,13 @@ section.testimonials {
 
 .testimonials-content__wrapper {
   width: 221px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .testimonials-content .text-content {
   font-size: 32px;
   font-family: Bitter;
-  padding: 0;
+  margin: 0;
 }
