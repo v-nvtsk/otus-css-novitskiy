@@ -627,15 +627,16 @@ section.testimonials {
   padding: 0;
   list-style: none;
   order: -1;
+  padding: 20px 0 30px 49px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 98px;
-  padding: 20px 0 30px 49px;
 }
 
 .links__item {
-  margin-left: 49px;
+  margin-left: 35px;
+  margin-top: 0;
 }
 
 .testimonials__link {
@@ -643,7 +644,6 @@ section.testimonials {
   color: black;
 
   display: flex;
-  flex-direction: column-reverse;
 }
 
 .testimonials__link:hover {
@@ -652,12 +652,10 @@ section.testimonials {
 
 .testimonials__link > p {
   margin: 0;
-  
+
   writing-mode: vertical-lr;
   transform-origin: center center;
-  transform: rotate(-180deg) translateX(-400%);
-  left: 50%;
-  top: 0;
+  transform: rotate(-180deg);
 }
 
 .testimonials__link .link__header {
