@@ -605,8 +605,7 @@ section.biography {
 
 section.testimonials {
   height: 760px;
-  /* padding: 0 139px; */
-  display: flex;
+  padding-left: 139px;
   display: flex;
   justify-content: center;
 }
