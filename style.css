@@ -630,7 +630,7 @@ section.testimonials {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap:10px;
+  gap: 10px;
 }
 
 .testimonials__link {
