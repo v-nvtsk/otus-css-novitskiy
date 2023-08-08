@@ -612,10 +612,11 @@ section.testimonials {
 
 .testimonials-header {
   width: 28px;
-  padding-left: 52px;
+  margin-left: 24px;
 }
 
 .testimonials-header > h2 {
+  max-width: none;
   width: 28px;
 }
 
