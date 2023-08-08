@@ -511,8 +511,7 @@ section.hero .description {
   writing-mode: vertical-lr;
   transform-origin: center center;
   transform: rotate(-180deg);
-  left: 50%;
-  top: 0;
+  margin: 0;
 }
 
 section.biography {
