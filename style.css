@@ -659,6 +659,16 @@ section.biography {
   height: 440px;
 }
 
+.gallery__card--active .card__image
+/* , .gallery__card:hover .card__image */
+/* Второй селектор добавлен для тестирования изменений размеров изображений при 
+  перемещении курсора над карточкой - увеличиваем изображение
+ */ {
+  height: 538px;
+  width: 572px;
+  transition: all 0.2s;
+}
+
 .designer__name {
   text-transform: uppercase;
   font-weight: 900;
