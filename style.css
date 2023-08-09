@@ -615,17 +615,35 @@ section#designers {
   display: inline-block;
 }
 
+/* 
+Элемент галерея
+Свойство overflow: scroll hidden добавляет скролл и скрывает содержимое,
+которое выпадает за пределы области элемета.
+*/
 .gallery {
-  display: flex;
-  flex-wrap: nowrap;
+  margin-top: 0px;
   overflow: scroll hidden;
-  padding: 0 20px;
+  padding: 0 20px 10px;
 }
 
+/* 
+Обёртка для карточек галереи - unordered list
+Использую фактически для смещения горизонтального скролла,
+для исключения наложения скроллбара на содержимое нижней
+строки футера карточки
+
+*/
 .gallery__wrapper {
+  margin: 30px 0 0 0;
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
+  /* 
+  Выравниваем все элементы по вертикали в конец контейнера - вниз,
+  чтобы при изменении размеров изображение росло вверх и не смещало
+  подписи
+  */
+  align-items: flex-end;
   list-style-type: none;
   padding: 0;
 }
@@ -636,7 +654,7 @@ section#designers {
 }
 
 .card__footer {
-  margin-top: 1.5em;
+  margin-top: 24px;
 }
 
 .card__footer > p {
