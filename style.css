@@ -611,11 +611,11 @@ section.biography {
 /* 
 Элемент галерея
 Свойство overflow: scroll hidden добавляет скролл и скрывает содержимое,
-которое выпадает за пределы области элемета.
+которое выпадает за пределы области элемента.
 */
 .gallery {
   margin-top: 0px;
-  overflow: scroll hidden;
+  overflow-x: scroll;
   padding: 0 20px 10px;
 }
 
