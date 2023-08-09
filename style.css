@@ -665,7 +665,7 @@ section.biography {
   перемещении курсора над карточкой - увеличиваем изображение
  */ {
   height: 538px;
-  width: 572px;
+  /* width: 572px; */
   transition: all 0.2s;
 }
 
