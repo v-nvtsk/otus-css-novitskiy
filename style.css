@@ -424,6 +424,12 @@ header {
   width: 100%;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .main-header {
   height: 136px;
   /* display: flex; */
@@ -514,9 +520,9 @@ section.hero .description {
   margin: 0;
 }
 
-section.biography {
+.biography {
   margin-top: 150px;
-  max-height: 840px;
+  height: 840px;
   display: flex;
   padding: 0 137px;
   position: relative;
@@ -528,6 +534,7 @@ section.biography {
   flex-direction: column;
   align-items: center;
   justify-items: flex-start;
+  margin-left: 29px;
 }
 
 .biography-header > h2 {
@@ -538,7 +545,12 @@ section.biography {
   order: -1;
   max-width: 50%;
   max-height: 840px;
+  min-width: 450px;
+
   flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .biography-image > img {
   display: block;
@@ -600,7 +612,6 @@ section.biography {
   font-size: 26px;
   font-weight: 400;
 }
-
 
 #designers .section-title {
   margin: 151px 0 0 140px;
