@@ -607,7 +607,7 @@ section.testimonials {
   height: 760px;
   padding-left: 139px;
   display: grid;
-  grid-template-columns: 118px 450px 140px 451px;
+  grid-template-columns: 118px 450px 140px auto;
 }
 
 .testimonials-header {
@@ -667,7 +667,7 @@ section.testimonials {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 451px;
+  max-width: 451px;
 }
 
 .testimonials-content__wrapper {
