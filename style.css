@@ -439,12 +439,13 @@ header {
 }
 
 .navigation {
-  height: 100%;
+  justify-content: flex-end;
 }
 
 .nav-menu {
   list-style-type: none;
   margin: 0;
+  padding: 0;
   /* display: flex; */
   /* justify-content: right; */
   /* gap: 55px; */
@@ -482,12 +483,14 @@ section.hero {
 }
 
 section.hero .wrapper {
-  width: 690px;
+  width: 48%;
+  min-width: 350px;
+  max-width: 690px;
   position: absolute;
   top: 135px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 110px 67px;
+  padding: 110px 1%;
   background-color: #ffffff;
   text-align: center;
 }
