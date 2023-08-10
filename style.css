@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), url("./fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight:500;
+  font-weight: 500;
 }
 
 @font-face {
@@ -254,6 +254,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -346,6 +347,7 @@ textarea {
  */
 
 [type="search"] {
+  appearance: textfield;
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -417,9 +419,6 @@ html {
   max-width: 100%;
 }
 
-body {
-  /* max-width: 1440px; */
-}
 section,
 header {
   width: 100%;
@@ -518,8 +517,7 @@ section.hero .description {
   writing-mode: vertical-lr;
   transform-origin: center center;
   transform: rotate(-180deg);
-  left: 50%;
-  top: 0;
+  margin: 0;
 }
 
 .biography {
