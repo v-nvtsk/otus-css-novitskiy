@@ -609,11 +609,11 @@ section.biography {
   font-weight: 400;
 }
 
-section.testimonials {
+.testimonials {
   height: 760px;
   padding-left: 139px;
   display: grid;
-  grid-template-columns: 118px 450px 140px auto;
+  grid-template-columns: 118px 32% 10% auto;
 }
 
 .testimonials-header {
