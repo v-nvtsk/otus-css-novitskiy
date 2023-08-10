@@ -483,7 +483,9 @@ section.hero {
 }
 
 section.hero .wrapper {
-  width: 690px;
+  width: 48%;
+  min-width: 350px;
+  max-width: 690px;
   position: absolute;
   top: 135px;
   left: 50%;
