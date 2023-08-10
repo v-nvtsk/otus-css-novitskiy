@@ -646,11 +646,13 @@ section.biography {
   flex-direction: column;
 }
 
-.card__footer {
+.gallery .card__footer {
   margin-top: 24px;
+  width: 335px;
+  align-self: flex-end;
 }
 
-.card__footer > p {
+.gallery .card__footer p {
   margin: 0;
 }
 
