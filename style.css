@@ -656,29 +656,52 @@ section.hero .description {
 .gallery__card {
   font-size: 16px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.card__footer {
+.gallery .card__footer {
   margin-top: 24px;
+  width: 335px;
+  align-self: flex-end;
 }
 
-.card__footer > p {
+.gallery .card__footer p {
   margin: 0;
 }
 
-.card__image {
-  display: block;
+.gallery .image-wrapper {
   height: 440px;
+  width: 335px;
+  overflow: hidden;
 }
 
-.gallery__card--active .card__image
-/* , .gallery__card:hover .card__image */
+.card__image {
+  /* display: block; */
+  /* height: 600px; */
+  width: 100%;
+}
+
+.gallery__card--active {
+  width: 572px;
+}
+
+.gallery__card--active .image-wrapper
+, .gallery__card:hover .image-wrapper
 /* Второй селектор добавлен для тестирования изменений размеров изображений при 
   перемещении курсора над карточкой - увеличиваем изображение
  */ {
   height: 538px;
-  /* width: 572px; */
+  width: 572px;
   transition: all 0.2s;
+}
+
+.gallery__card--active .card__image,
+.gallery__card:hover .card__image {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .designer__name {
