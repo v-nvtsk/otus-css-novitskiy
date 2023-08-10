@@ -490,7 +490,7 @@ section.hero .wrapper {
   top: 135px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 110px 67px;
+  padding: 110px 1%;
   background-color: #ffffff;
   text-align: center;
 }
