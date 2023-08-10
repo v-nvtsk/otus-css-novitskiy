@@ -662,6 +662,9 @@ section.biography {
 }
 
 .overview-image {
+  background: url('./img/testimonials-section-image.jpg') right/cover no-repeat;
+  height: 100%;
+  width: 100%;
   justify-self: start;
   order: -1;
   max-height: 100%;
