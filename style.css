@@ -427,8 +427,6 @@ header {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   height: 100%;
 }
 
