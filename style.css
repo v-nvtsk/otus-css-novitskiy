@@ -425,6 +425,12 @@ header {
   width: 100%;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .main-header {
   height: 136px;
   /* display: flex; */
