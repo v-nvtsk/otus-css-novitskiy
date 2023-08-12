@@ -759,3 +759,11 @@ section.strong-points .gallery__card--central {
   font-size: 34px;
   height: 42px;
 }
+
+@supports (display: grid) {
+  .strong-points .gallery__wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 335px) 450px repeat(2, 335px);
+  }
+}
