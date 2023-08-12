@@ -716,3 +716,13 @@ section.hero .description {
 .designer__from strong {
   font-weight: bold;
 }
+
+.strong-points {
+  height: 613px;
+  margin-top: 150px;
+}
+
+.strong-points .section-title {
+  margin: 0;
+  margin-left: 258px;
+}
