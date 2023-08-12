@@ -726,3 +726,22 @@ section.hero .description {
   margin: 0;
   margin-left: 258px;
 }
+
+.section-content-title {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 86px;
+  margin: 0 auto;
+}
+
+.strengths__list {
+  margin: 0 auto;
+  margin-top: 18px;
+  padding: 0;
+  list-style-type: none;
+}
+.strengths__item {
+  font-family: "Bitter";
+  font-size: 34px;
+  line-height: 1.2;
+}
