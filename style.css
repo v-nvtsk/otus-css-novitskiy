@@ -745,6 +745,7 @@ section.strong-points .gallery__card--central {
   font-weight: 500;
   font-size: 86px;
   margin: 0 auto;
+  line-height: 1;
 }
 
 .strengths__list {
