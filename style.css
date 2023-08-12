@@ -686,8 +686,8 @@ section.hero .description {
   width: 572px;
 }
 
-.gallery__card--active .image-wrapper
-, .gallery__card:hover .image-wrapper
+.gallery--active .gallery__card--active .image-wrapper
+,.gallery--active  .gallery__card:hover .image-wrapper
 /* Второй селектор добавлен для тестирования изменений размеров изображений при 
   перемещении курсора над карточкой - увеличиваем изображение
  */ {
@@ -696,8 +696,8 @@ section.hero .description {
   transition: all 0.2s;
 }
 
-.gallery__card--active .card__image,
-.gallery__card:hover .card__image {
+.gallery--active .gallery__card--active .card__image,
+.gallery--active .gallery__card:hover .card__image {
   position: relative;
   left: 50%;
   top: 50%;
