@@ -14,7 +14,7 @@
 
 <body>
   <header class="main-header">
-    <nav class="navigation">
+    <nav class="navigation container">
       <ul class="nav-menu">
         <li class="nav-menu__item"><a class="nav-menu__link" href="#biography">Biography</a></li>
         <li class="nav-menu__item"><a class="nav-menu__link" href="#designers">Designers</a></li>
@@ -25,89 +25,151 @@
   </header>
 
   <section id="hero" class="hero">
-    <div class="wrapper">
-      <h1 class="title">Mod Studio</h1>
-      <p class="description">Modern Web Studio</p>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="title">Mod Studio</h1>
+        <p class="description">Modern Web Studio</p>
+      </div>
     </div>
   </section>
 
-  <section id="biography" class="biography">
-    <div class="biography-header">
-      <h2 class="section-title section-title--vertical">Biography</h2>
-    </div>
 
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <div class="biography-image"><img src="./img/biography-photo.jpg" alt=""></div>
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <section id="biography">
+    <div class="container">
+      <div class="biography">
+        <div class="biography-header">
+          <h2 class="section-title section-title--vertical">Biography</h2>
+        </div>
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        <div class="biography-image">
+          <img src="./img/biography-photo.jpg" alt="">
+        </div>
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
-    <div class="person">
-      <div class="person__name">
-        Katya<br />
-        Mills
+        <div class="person">
+          <div class="person__name">
+            Katya<br />
+            Mills
+          </div>
+
+          <div class="person-role">Art Director</div>
+
+          <ul class="person__skill-list">
+            <li class="person__skill-item">Scenography</li>
+            <li class="person__skill-item">Styling</li>
+            <li class="person__skill-item">Creative Photography</li>
+            <li class="person__skill-item">Design</li>
+          </ul>
+
+          <div class="rectangle-divider"></div>
+
+          <blockquote class="person__quote">
+            “The more I deal with the work <br>
+            as something that is my own, <br>
+            as something that is personal, <br>
+            the more successful it is.”
+          </blockquote>
+        </div>
       </div>
-
-      <div class="person-role">Art Director</div>
-
-      <ul class="person__skill-list">
-        <li class="person__skill-item">Scenography</li>
-        <li class="person__skill-item">Styling</li>
-        <li class="person__skill-item">Creative Photography</li>
-        <li class="person__skill-item">Design</li>
-      </ul>
-
-      <div class="rectangle-divider"></div>
-
-    <blockquote class="person__quote">
-      “The more I deal with the work <br>
-      as something that is my own, <br>
-      as something that is personal, <br>
-      the more successful it is.”
-    </blockquote>
+    </div>
   </section>
 
   <section id="designers">
-    <h2 class="section-title">
-      Designers
-    </h2>
+    <div class="container">
+      <h2 class="section-title">
+        Designers
+      </h2>
 
-    <div>
-      <img src="./img/designers-01.jpg" alt="">
-      <p>
-        <strong>Jess Wonder</strong>
-      </p>
-      <p>
-        <strong>From/</strong> Be more flower
-      </p>
-      <p>
-        <strong>Skills/</strong> Design Strategy / Marketing
-      </p>
-    </div>
+      <div class="gallery gallery--active">
+        <ul class="gallery__wrapper">
+          <li class="gallery__card gallery__card--active">
+            <div class="image-wrapper">
+              <img class="card__image" src="./img/designers-01.jpg" alt="Jess Wonder">
+            </div>
+            <div class="card__footer">
+              <p class="designer__name">
+                <strong>Jess Wonder</strong>
+              </p>
+              <p class="designer__from">
+                <strong>From/</strong> Be more flower
+              </p>
+              <p class="designer__skills">
+                <strong>Skills/</strong> Design Strategy / Marketing
+              </p>
+            </div>
+          </li>
 
-    <div>
-      <img src="./img/designers-02.jpg" alt="">
-      <p>
-        <strong>Kameron Clein</strong>
-      </p>
-      <p>
-        <strong>From/</strong> Be more flower
-      </p>
-      <p>
-        <strong>Skills/</strong> Design Strategy / Marketing
-      </p>
-    </div>
+          <li class="gallery__card">
+            <div class="image-wrapper">
+              <img class="card__image" src="./img/designers-02.jpg" alt="Kameron Clein">
+            </div>
+            <div class="card__footer">
+              <p class="designer__name">
+                <strong>Kameron Clein</strong>
+              </p>
+              <p class="designer__from">
+                <strong>From/</strong> Be more flower
+              </p>
+              <p class="designer__skills">
+                <strong>Skills/</strong> Design Strategy / Marketing
+              </p>
+            </div>
+          </li>
 
-    <div>
-      <img src="./img/designers-03.jpg" alt="">
-      <p>
-        <strong>LOUISSE RED</strong>
-      </p>
-      <p>
-        <strong>From/</strong> Be more flower
-      </p>
-      <p>
-        <strong>Skills/</strong> Design Strategy / Marketing
-      </p>
+          <li class="gallery__card">
+            <div class="image-wrapper">
+              <img class="card__image" src="./img/designers-03.jpg" alt="LOUISSE RED">
+            </div>
+            <div class="card__footer">
+              <p class="designer__name">
+                <strong>LOUISSE RED</strong>
+              </p>
+              <p class="designer__from">
+                <strong>From/</strong> Be more flower
+              </p>
+              <p class="designer__skills">
+                <strong>Skills/</strong> Design Strategy / Marketing
+              </p>
+            </div>
+          </li>
+
+          <li class="gallery__card">
+            <div class="image-wrapper">
+              <img class="card__image" src="./img/designers-02.jpg" alt="Kameron Clein">
+            </div>
+            <div class="card__footer">
+              <p class="designer__name">
+                <strong>Kameron Clein</strong>
+              </p>
+              <p class="designer__from">
+                <strong>From/</strong> Be more flower
+              </p>
+              <p class="designer__skills">
+                <strong>Skills/</strong> Design Strategy / Marketing
+              </p>
+            </div>
+          </li>
+
+          <li class="gallery__card">
+            <div class="image-wrapper">
+              <img class="card__image" src="./img/designers-01.jpg" alt="Jess Wonder">
+            </div>
+            <div class="card__footer">
+              <p class="designer__name">
+                <strong>Jess Wonder</strong>
+              </p>
+              <p class="designer__from">
+                <strong>From/</strong> Be more flower
+              </p>
+              <p class="designer__skills">
+                <strong>Skills/</strong> Design Strategy / Marketing
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -161,44 +223,48 @@
   </section>
 
   <section id="strong-points">
-    <h2 class="section-title">Strong points</h2>
-    <div>
-      <img src="./img/strengths-01.jpg" alt="">
-      <img src="./img/strengths-02.jpg" alt="">
-    </div>
-    <div>
-      <h3>Strengths</h3>
-      <ul>
-        <li>Interiors</li>
-        <li>Outdoors</li>
-        <li>Portraits</li>
-        <li>Styling</li>
-        <li>Events</li>
-        <li>Architecture</li>
-        <li>Design</li>
-        <li>Celebrations</li>
-        <li>Artistic</li>
-        <li>Fashion</li>
-        <li>Nature</li>
-        <li>Creativity</li>
-      </ul>
-    </div>
-    <div>
-      <img src="./img/strengths-03.jpg" alt="">
-      <img src="./img/strengths-04.jpg" alt="">
+    <div class="container">
+      <h2 class="section-title">Strong points</h2>
+      <div>
+        <img src="./img/strengths-01.jpg" alt="">
+        <img src="./img/strengths-02.jpg" alt="">
+      </div>
+      <div>
+        <h3>Strengths</h3>
+        <ul>
+          <li>Interiors</li>
+          <li>Outdoors</li>
+          <li>Portraits</li>
+          <li>Styling</li>
+          <li>Events</li>
+          <li>Architecture</li>
+          <li>Design</li>
+          <li>Celebrations</li>
+          <li>Artistic</li>
+          <li>Fashion</li>
+          <li>Nature</li>
+          <li>Creativity</li>
+        </ul>
+      </div>
+      <div>
+        <img src="./img/strengths-03.jpg" alt="">
+        <img src="./img/strengths-04.jpg" alt="">
+      </div>
     </div>
   </section>
 
   <!-- Для мобильной версии -->
   <footer>
-    <nav>
-      <ul>
-        <li>B</li>
-        <li>D</li>
-        <li>T</li>
-        <li>S</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>B</li>
+          <li>D</li>
+          <li>T</li>
+          <li>S</li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 </body>
 
