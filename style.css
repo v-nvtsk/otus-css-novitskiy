@@ -718,6 +718,7 @@ section.hero .description {
 }
 
 .testimonials {
+  margin-top: 150px;
   height: 760px;
   padding-left: 139px;
   display: grid;
