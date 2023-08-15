@@ -479,7 +479,12 @@ header {
 section.hero {
   height: 630px;
   background: url("./img/hero-background.jpg") no-repeat center/cover;
-  position: relative;
+}
+
+section.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section.hero .wrapper {
