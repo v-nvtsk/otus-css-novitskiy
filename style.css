@@ -807,8 +807,10 @@ section.hero .description {
   }
 }
 
+/* Hero section will not change style to up to width 500px */
+@media screen and (max-width: 500px) {
   /* Change section beckground image and move it to bottom  */
-  section.hero {
+  section.hero .container {
     width: 100vw;
     background: url("./img/hero-background-mobile.jpg") no-repeat bottom
       center/cover;
@@ -818,7 +820,7 @@ section.hero .description {
   section.hero .wrapper {
     align-self: start;
     padding: 100px 32px;
-    width: 100vw;
+    width: 100%;
   }
 
   /* Change font properties */
