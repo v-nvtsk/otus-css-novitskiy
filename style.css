@@ -432,9 +432,9 @@ header {
 
 .main-header {
   height: 136px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: right; */
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
   padding-right: 20px;
 }
 
@@ -442,27 +442,19 @@ header {
   justify-content: flex-end;
 }
 
+.navigation.container {
+  width: 100%;
+}
+
 .nav-menu {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
-  /* display: flex; */
-  /* justify-content: right; */
-  /* gap: 55px; */
   height: 100%;
-  text-align: right;
-}
-
-.nav-menu__item {
-  display: inline-block;
-  position: relative;
-  /* margin: 0 auto; */
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav-menu__item:not(:last-of-type) {
-  margin-right: 51px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 56px;
 }
 
 .nav-menu__link {
@@ -798,6 +790,12 @@ section.hero .description {
   line-height: 1.2;
   font-family: Bitter;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
 }
 
 /* Hero section will not change style to up to width 500px */
