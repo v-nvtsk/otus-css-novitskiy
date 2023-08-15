@@ -799,3 +799,35 @@ section.hero .description {
   font-family: Bitter;
   margin: 0;
 }
+
+/* Hero section will not change style to up to width 500px */
+@media screen and (max-width: 500px) {
+  /* Container width is auto on small screen */
+  .container {
+    width: auto;
+  }
+
+  /* Change section beckground image and move it to bottom  */
+  section.hero {
+    width: 100vw;
+    background: url("./img/hero-background-mobile.jpg") no-repeat bottom
+      center/cover;
+    height: 764px;
+  }
+
+  section.hero .wrapper {
+    align-self:start;
+    padding: 100px 32px;
+    width: 100vw;
+  }
+
+  /* Change font properties */
+  section.hero .title {
+    font-weight: 400;
+    font-size: 70px;
+  }
+
+  section.hero .description {
+    font-size: 18px;
+  }
+}
