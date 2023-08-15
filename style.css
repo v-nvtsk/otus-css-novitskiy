@@ -799,12 +799,13 @@ section.hero .description {
   }
 }
 
-/* Hero section will not change style to up to width 500px */
 @media screen and (max-width: 500px) {
   /* Container width is auto on small screen */
   .container {
-    width: auto;
+    min-width: 350px;
+    margin: 0 auto;
   }
+}
 
   /* Change section beckground image and move it to bottom  */
   section.hero {
