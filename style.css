@@ -483,13 +483,7 @@ section.hero {
 }
 
 section.hero .wrapper {
-  width: 48%;
-  min-width: 350px;
-  max-width: 690px;
-  position: absolute;
-  top: 135px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 690px;
   padding: 110px 1%;
   background-color: #ffffff;
   text-align: center;
