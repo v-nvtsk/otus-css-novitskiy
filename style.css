@@ -815,7 +815,7 @@ section.hero .description {
   }
 
   section.hero .wrapper {
-    align-self:start;
+    align-self: start;
     padding: 100px 32px;
     width: 100vw;
   }
