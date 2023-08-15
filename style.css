@@ -481,6 +481,7 @@ section.hero .container {
 
 section.hero .wrapper {
   width: 690px;
+  height: 360px;
   padding: 110px 1%;
   background-color: #ffffff;
   text-align: center;
