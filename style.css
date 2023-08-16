@@ -793,6 +793,57 @@ section.hero .description {
   margin: 0;
 }
 
+.strong-points {
+  height: 613px;
+  margin-top: 150px;
+}
+
+.strong-points .section-title {
+  margin: 0;
+  margin-left: 258px;
+}
+
+.strong-points .gallery .image-wrapper {
+  height: auto;
+}
+
+section.strong-points .gallery__card {
+  height: 554px;
+}
+
+section.strong-points .gallery__card--central {
+  justify-content: start;
+  width: 450px;
+}
+
+.section-content-title {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 86px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.strengths__list {
+  margin-top: 28px;
+  margin-left: 117px;
+  padding: 0;
+  list-style-type: none;
+}
+.strengths__item {
+  font-family: "Bitter";
+  font-size: 34px;
+  height: 42px;
+}
+
+@supports (display: grid) {
+  .strong-points .gallery__wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 335px) 450px repeat(2, 335px);
+  }
+}
+
 @media screen and (max-width: 500px) {
   .main-header {
     display: none;
