@@ -862,7 +862,7 @@ section.strong-points .gallery__card--central {
 
   /* Change section beckground image and move it to bottom  */
   section.hero .container {
-    width: 100vw;
+    width: 100%;
     background: url("./img/hero-background-mobile.jpg") no-repeat bottom
       center/cover;
     height: 764px;
