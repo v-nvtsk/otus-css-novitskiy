@@ -883,4 +883,100 @@ section.strong-points .gallery__card--central {
   section.hero .description {
     font-size: 18px;
   }
+  .biography {
+    margin: 0;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .biography-header {
+    order: -1;
+    position: absolute;
+    right: 16px;
+
+    width: auto;
+    display: block;
+    margin-left: 29px;
+  }
+
+  .biography-header > h2 {
+    font-size: 18px;
+  }
+
+  .biography-image {
+    order: 1;
+    max-width: 100%;
+    height: 450px;
+    min-width: auto;
+    overflow: hidden;
+  }
+  .biography-image > img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .person {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .person__name {
+    font-size: 64px;
+    font-weight: 400;
+    margin: 41px auto 41px 18px;
+  }
+
+  .person__name::before {
+    content: "- ";
+    font-size: 64px;
+    font-weight: 400;
+  }
+  .person__name br {
+    display: none;
+  }
+
+  .person-role {
+    margin-top: 0;
+  }
+
+  .person-role,
+  .person__skill-list {
+    width: 308px;
+    order: 2;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 0 18px;
+  }
+
+  .person__skill-list {
+    order: 1;
+    margin-top: 0;
+    list-style-type: none;
+  }
+
+  .person__skill-item {
+    display: block;
+  }
+
+  .person__skill-item:not(:last-of-type)::after {
+    content: "";
+  }
+
+  .person__skill-item::before {
+    content: "- ";
+  }
+
+  .rectangle-divider {
+    display: none;
+  }
+
+  .person__quote {
+    margin: 57px 15px 0;
+    font-size: 30px;
+    font-weight: 300;
+  }
 }
