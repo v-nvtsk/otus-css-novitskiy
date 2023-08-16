@@ -883,8 +883,9 @@ section.strong-points .gallery__card--central {
   section.hero .description {
     font-size: 18px;
   }
+
   .biography {
-    margin: 0;
+    margin: 80px 0 0;
     height: auto;
     flex-direction: column;
     padding: 0;
