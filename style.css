@@ -855,6 +855,10 @@ section.strong-points .gallery__card--central {
     margin: 0 auto;
   }
 
+  section.hero {
+    height: auto;
+  }
+
   /* Change section beckground image and move it to bottom  */
   section.hero .container {
     width: 100vw;
