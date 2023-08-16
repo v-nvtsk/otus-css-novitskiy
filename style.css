@@ -899,10 +899,6 @@ section.strong-points .gallery__card--central {
     width: auto;
   }
 
-  .biography-header > h2 {
-    font-size: 18px;
-  }
-
   .biography-image {
     order: 1;
     max-width: 100%;
