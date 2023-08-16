@@ -852,6 +852,7 @@ section.strong-points .gallery__card--central {
   /* Container width is auto on small screen */
   .container {
     min-width: 350px;
+    max-width: none;
     margin: 0 auto;
   }
 
