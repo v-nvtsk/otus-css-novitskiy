@@ -848,18 +848,13 @@ section.strong-points .gallery__card--central {
   .main-header {
     display: none;
   }
-}
 
-@media screen and (max-width: 500px) {
   /* Container width is auto on small screen */
   .container {
     min-width: 350px;
     margin: 0 auto;
   }
-}
 
-/* Hero section will not change style to up to width 500px */
-@media screen and (max-width: 500px) {
   /* Change section beckground image and move it to bottom  */
   section.hero .container {
     width: 100vw;
