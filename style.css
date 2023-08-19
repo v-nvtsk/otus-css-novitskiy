@@ -848,6 +848,7 @@ section.hero .description {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
   .main-header {
     display: none;
   }
