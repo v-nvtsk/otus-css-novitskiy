@@ -862,6 +862,14 @@ section.hero .description {
     display: none;
   }
 
+  .main-footer {
+    bottom: 0;
+    margin-top: 80px;
+    display: block;
+    height: 82px;
+    padding: 0 16px;
+    border-top: 1px solid #000;
+  }
 
   .main-footer .footer__navigation {
     display: flex;
