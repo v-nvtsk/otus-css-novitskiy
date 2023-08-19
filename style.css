@@ -852,6 +852,36 @@ section.strong-points .gallery__card--central {
     display: none;
   }
 
+
+  .main-footer .footer__navigation {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .main-footer .links__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+
+    font-family: "Bitter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .main-footer .links__item {
+    width: 92px;
+    height: 82px;
+    line-height: 82px;
+    text-align: center;
+  }
   /* Container width is auto on small screen */
   .container {
     min-width: 350px;
