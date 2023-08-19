@@ -914,6 +914,7 @@ section.hero .description {
   }
 }
 
+@media screen and (max-width: 600px) {
   /* Container width is auto on small screen */
   .container {
     min-width: 350px;
