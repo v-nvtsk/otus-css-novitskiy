@@ -844,7 +844,10 @@ section.strong-points .gallery__card--central {
   }
 }
 
-@media screen and (max-width: 500px) {
+.footer--main {
+  display: none;
+}
+
   .main-header {
     display: none;
   }
