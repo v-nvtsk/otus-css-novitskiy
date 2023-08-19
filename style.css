@@ -882,6 +882,20 @@ section.strong-points .gallery__card--central {
     line-height: 82px;
     text-align: center;
   }
+
+  .main-footer .footer__link {
+    text-decoration: none;
+    color: #000;
+  }
+  .main-footer .footer__link:hover {
+    text-decoration: underline;
+  }
+
+  .main-footer .footer__link:active {
+    font-weight: 700;
+  }
+}
+
   /* Container width is auto on small screen */
   .container {
     min-width: 350px;
