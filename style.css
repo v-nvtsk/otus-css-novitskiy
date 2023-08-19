@@ -1041,18 +1041,40 @@ section.hero .description {
     font-weight: 300;
   }
 
-  #designers .section-title {
+  .designers-section .section-title {
     margin: 80px auto 0 16px;
     text-align-last: left;
   }
 
   .gallery__wrapper {
     gap: 16px;
+    align-items: baseline;
   }
 
-  #designers .gallery .card__footer,
-  .gallery .image-wrapper {
+  .designers-section .gallery {
+    padding: 0 16px 10px;
+  }
+
+  /* ГАЛЕРЕЯ НЕ ВЫСТРАИВАЕТСЯ ПРАВИЛЬНО - ИЗОБРАЖЕНИЯ СМЕЩЕНЫ  */
+  .designers-section .gallery__card,
+  .designers-section .gallery__card--active {
+    /* ЗАМЕНИТЬ НА 310PX */
+    width: 310px;
+    height: 440px;
+    overflow: hidden;
+  }
+
+  .gallery--active .gallery__card--active .image-wrapper,
+  .gallery--active .gallery__card:hover .image-wrapper {
+    height: 435px;
+    width: 100%;
+    transition: none;
+  }
+
+  .gallery--active .gallery__card--active .card__image,
+  .gallery--active .gallery__card:hover .card__image {
+    position: static;
+    transform: none;
     width: 310px;
   }
-
 }
