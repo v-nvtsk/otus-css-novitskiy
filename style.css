@@ -713,7 +713,7 @@ section.hero .description {
   height: 760px;
   padding-left: 139px;
   display: grid;
-  grid-template-columns: 118px 32% 10% auto;
+  grid-template-columns: 118px minmax(50px, 32%) 10% auto;
 }
 
 .testimonials-header {
