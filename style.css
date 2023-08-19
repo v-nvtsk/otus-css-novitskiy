@@ -1206,7 +1206,7 @@ section.hero .description {
   }
 
   @supports (display: grid) {
-    .strong-points .gallery__wrapper {
+    .strong-points-section .gallery__wrapper {
       display: grid;
       grid-gap: 20px;
       grid-template-columns: 200px repeat(4, 310px);
