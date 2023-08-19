@@ -1220,4 +1220,18 @@ section.hero .description {
     }
   }
 
+  .section-title {
+    text-align: right;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .section-title--vertical {
+    writing-mode: horizontal-tb;
+    transform-origin: center center;
+    transform: none;
+    margin: 0;
+  }
 }
