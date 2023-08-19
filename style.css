@@ -853,6 +853,15 @@ section.hero .description {
     display: none;
   }
 
+  .testimonials {
+    padding-left: 20px;
+    grid-template-columns: 118px 10% auto;
+  }
+
+  .testimonials .overview-image {
+    display: none;
+  }
+
 
   .main-footer .footer__navigation {
     display: flex;
