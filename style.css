@@ -793,25 +793,25 @@ section.hero .description {
   margin: 0;
 }
 
-.strong-points {
+.strong-points-section {
   height: 613px;
   margin-top: 150px;
 }
 
-.strong-points .section-title {
+.strong-points-section .section-title {
   margin: 0;
   margin-left: 258px;
 }
 
-.strong-points .gallery .image-wrapper {
+.strong-points-section .gallery .image-wrapper {
   height: auto;
 }
 
-section.strong-points .gallery__card {
+.strong-points-section .gallery__card {
   height: 554px;
 }
 
-section.strong-points .gallery__card--central {
+.strong-points-section .gallery__card--central {
   justify-content: start;
   width: 450px;
 }
@@ -837,7 +837,7 @@ section.strong-points .gallery__card--central {
 }
 
 @supports (display: grid) {
-  .strong-points .gallery__wrapper {
+  .strong-points-section .gallery__wrapper {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 335px) 450px repeat(2, 335px);
