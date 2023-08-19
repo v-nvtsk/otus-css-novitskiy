@@ -539,7 +539,7 @@ section.hero .description {
   order: -1;
   max-width: 50%;
   max-height: 840px;
-  min-width: 450px;
+  min-width: 250px;
 
   flex-grow: 0;
   display: flex;
