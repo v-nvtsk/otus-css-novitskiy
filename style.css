@@ -848,13 +848,18 @@ section.hero .description {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-header {
     display: none;
   }
 
   .testimonials {
-    padding-left: 20px;
     grid-template-columns: 118px 10% auto;
   }
 
