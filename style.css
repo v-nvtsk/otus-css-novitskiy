@@ -412,6 +412,7 @@ html {
   font-family: "Roboto", sans-serif;
   /* font-family: 'Playfair Display'; */
   /* font-family: 'Bitter'; */
+  scroll-behavior: smooth;
 }
 
 * {
