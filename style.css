@@ -679,6 +679,8 @@ section.hero .description {
   height: 440px;
   width: 335px;
   overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: bottom;
 }
 
 .card__image {
