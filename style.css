@@ -472,12 +472,13 @@ header {
   content: "";
   height: 100%;
   width: 110%;
-  transform: translate(-5%, -70%);
+  transform: translate(-5%, -30%);
 }
 
-.nav-menu__item:hover .nav-menu__link::after {
+.nav-menu__link:hover::after {
   border-bottom: 4px solid black;
   transition: all 0.3s;
+  transform: translate(-5%, -70%);
 }
 
 section.hero {
