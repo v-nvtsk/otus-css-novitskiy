@@ -691,14 +691,12 @@ section.hero .description {
   width: 572px;
 }
 
-.gallery--active .gallery__card--active .image-wrapper
-,.gallery--active  .gallery__card:hover .image-wrapper
-/* Второй селектор добавлен для тестирования изменений размеров изображений при 
-  перемещении курсора над карточкой - увеличиваем изображение
- */ {
+.gallery--active .gallery__card--active .image-wrapper {
   height: 538px;
   width: 572px;
-  transition: all 0.2s;
+}
+.gallery--active .gallery__card:not(.gallery__card--active):hover .image-wrapper {
+  transform: scale(1.07);
 }
 
 .gallery--active .gallery__card--active .card__image,
