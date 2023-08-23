@@ -462,10 +462,21 @@ header {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  position: relative;
 }
 
-.nav-menu__link:hover {
-  text-decoration: underline;
+.nav-menu__link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 110%;
+  transform: translate(-5%, -70%);
+}
+
+.nav-menu__item:hover .nav-menu__link::after {
+  border-bottom: 4px solid black;
+  transition: all 0.3s;
 }
 
 section.hero {
