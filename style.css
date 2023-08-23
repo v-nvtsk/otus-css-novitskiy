@@ -467,6 +467,7 @@ header {
 }
 
 .nav-menu__link::after {
+  pointer-events:none;
   display: block;
   position: absolute;
   content: "";
