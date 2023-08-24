@@ -859,6 +859,10 @@ section.hero .description {
 }
 
 .main-footer {
+  height: 139px;
+}
+
+.main-footer .container{
   display: none;
 }
 
