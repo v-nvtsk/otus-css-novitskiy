@@ -412,6 +412,7 @@ html {
   font-family: "Roboto", sans-serif;
   /* font-family: 'Playfair Display'; */
   /* font-family: 'Bitter'; */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -462,10 +463,23 @@ header {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  position: relative;
 }
 
-.nav-menu__link:hover {
-  text-decoration: underline;
+.nav-menu__link::after {
+  pointer-events:none;
+  display: block;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 110%;
+  transform: translate(-5%, -30%);
+}
+
+.nav-menu__link:hover::after {
+  border-bottom: 4px solid black;
+  transition: all 0.3s;
+  transform: translate(-5%, -70%);
 }
 
 section.hero {
@@ -665,6 +679,8 @@ section.hero .description {
   height: 440px;
   width: 335px;
   overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: bottom;
 }
 
 .card__image {
@@ -677,14 +693,12 @@ section.hero .description {
   width: 572px;
 }
 
-.gallery--active .gallery__card--active .image-wrapper
-,.gallery--active  .gallery__card:hover .image-wrapper
-/* Второй селектор добавлен для тестирования изменений размеров изображений при 
-  перемещении курсора над карточкой - увеличиваем изображение
- */ {
+.gallery--active .gallery__card--active .image-wrapper {
   height: 538px;
   width: 572px;
-  transition: all 0.2s;
+}
+.gallery--active .gallery__card:not(.gallery__card--active):hover .image-wrapper {
+  transform: scale(1.07);
 }
 
 .gallery--active .gallery__card--active .card__image,
