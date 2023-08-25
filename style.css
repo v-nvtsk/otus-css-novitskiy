@@ -812,7 +812,8 @@ section.hero .description {
 }
 
 .strong-points-section {
-  height: 613px;
+  height: calc(613px + 139px);
+  padding-bottom: 139px;
   margin-top: 150px;
 }
 
@@ -864,9 +865,6 @@ section.hero .description {
 
 .main-footer {
   height: 139px;
-}
-
-.main-footer .container{
   display: none;
 }
 
@@ -889,7 +887,15 @@ section.hero .description {
     display: none;
   }
 
+  .strong-points-section {
+    padding-bottom: 162px;
+  }
+
   .main-footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
     bottom: 0;
     margin-top: 80px;
     display: block;
