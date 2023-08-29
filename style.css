@@ -413,6 +413,7 @@ html {
   /* font-family: 'Playfair Display'; */
   /* font-family: 'Bitter'; */
   scroll-behavior: smooth;
+  scroll-padding-top: 136px;
 }
 
 * {
@@ -431,7 +432,7 @@ header {
   height: 100%;
 }
 
-.main-header {
+.page__header {
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -540,7 +541,7 @@ section.hero .description {
   position: relative;
 }
 
-.biography-header {
+.biography__header {
   width: 10%;
   display: flex;
   flex-direction: column;
@@ -549,11 +550,11 @@ section.hero .description {
   margin-left: 29px;
 }
 
-.biography-header > h2 {
+.biography__header > .section-title {
   align-self: flex-start;
 }
 
-.biography-image {
+.biography__image {
   order: -1;
   max-width: 50%;
   max-height: 840px;
@@ -564,7 +565,7 @@ section.hero .description {
   justify-content: center;
   align-items: center;
 }
-.biography-image > img {
+.biography__image > img {
   display: block;
   max-height: 100%;
 }
@@ -584,11 +585,11 @@ section.hero .description {
   line-height: 1.2;
 }
 
-.person-role {
+.person__role {
   margin-top: 36px;
 }
 
-.person-role,
+.person__role,
 .person__skill-list {
   font-size: 18px;
   font-weight: 500;
@@ -669,13 +670,13 @@ section.hero .description {
   flex-direction: column;
 }
 
-.gallery .card__footer {
+.gallery .gallery__card-footer {
   margin-top: 24px;
   width: 335px;
   align-self: flex-end;
 }
 
-.gallery .card__footer p {
+.gallery .gallery__card-footer p {
   margin: 0;
 }
 
@@ -687,7 +688,7 @@ section.hero .description {
   transform-origin: bottom;
 }
 
-.card__image {
+.gallery__card-image {
   /* display: block; */
   /* height: 600px; */
   width: 100%;
@@ -701,12 +702,14 @@ section.hero .description {
   height: 538px;
   width: 572px;
 }
-.gallery--active .gallery__card:not(.gallery__card--active):hover .image-wrapper {
+.gallery--active
+  .gallery__card:not(.gallery__card--active):hover
+  .image-wrapper {
   transform: scale(1.07);
 }
 
-.gallery--active .gallery__card--active .card__image,
-.gallery--active .gallery__card:hover .card__image {
+.gallery--active .gallery__card--active .gallery__card-image,
+.gallery--active .gallery__card:hover .gallery__card-image {
   position: relative;
   left: 50%;
   top: 50%;
@@ -775,7 +778,7 @@ section.hero .description {
   transform: rotate(-180deg);
 }
 
-.testimonials__link .link__header {
+.testimonials__link .links__item-header {
   font-weight: bold;
 }
 
@@ -863,7 +866,7 @@ section.hero .description {
   }
 }
 
-.main-footer {
+.page-footer {
   height: 139px;
   display: none;
 }
@@ -875,7 +878,11 @@ section.hero .description {
 }
 
 @media screen and (max-width: 768px) {
-  .main-header {
+  html {
+    scroll-padding-top: 20px;
+  }
+
+  .page__header {
     display: none;
   }
 
@@ -891,7 +898,7 @@ section.hero .description {
     padding-bottom: 162px;
   }
 
-  .main-footer {
+  .page-footer {
     display: block;
     position: fixed;
     width: 100%;
@@ -904,13 +911,13 @@ section.hero .description {
     border-top: 1px solid #000;
   }
 
-  .main-footer .footer__navigation {
+  .page-footer .page-footer__navigation {
     display: flex;
     align-items: flex-end;
     width: 100%;
   }
 
-  .main-footer .links__list {
+  .page-links__links {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -927,22 +934,22 @@ section.hero .description {
     line-height: 1.2;
   }
 
-  .main-footer .links__item {
+  .page-footer .links__item {
     width: 92px;
     height: 82px;
     line-height: 82px;
     text-align: center;
   }
 
-  .main-footer .footer__link {
+  .page-footer .links__link {
     text-decoration: none;
     color: #000;
   }
-  .main-footer .footer__link:hover {
+  .page-footer .links__link:hover {
     text-decoration: underline;
   }
 
-  .main-footer .footer__link:active {
+  .page-footer .links__link:active {
     font-weight: 700;
   }
 }
@@ -990,7 +997,7 @@ section.hero .description {
     padding: 0;
   }
 
-  .biography-header {
+  .biography__header {
     order: -1;
     position: absolute;
     right: 16px;
@@ -998,14 +1005,14 @@ section.hero .description {
     width: auto;
   }
 
-  .biography-image {
+  .biography__image {
     order: 1;
     max-width: 100%;
     height: 450px;
     min-width: auto;
     overflow: hidden;
   }
-  .biography-image > img {
+  .biography__image > img {
     object-fit: cover;
     width: 100%;
   }
@@ -1033,11 +1040,11 @@ section.hero .description {
     display: none;
   }
 
-  .person-role {
+  .person__role {
     margin-top: 0;
   }
 
-  .person-role,
+  .person__role,
   .person__skill-list {
     width: 308px;
     order: 2;
@@ -1104,8 +1111,8 @@ section.hero .description {
     transition: none;
   }
 
-  .gallery--active .gallery__card--active .card__image,
-  .gallery--active .gallery__card:hover .card__image {
+  .gallery--active .gallery__card--active .gallery__card-image,
+  .gallery--active .gallery__card:hover .gallery__card-image {
     position: static;
     transform: none;
     width: 310px;
@@ -1179,8 +1186,8 @@ section.hero .description {
     flex-direction: column;
   }
 
-  .testimonials__link .link__header,
-  .testimonials__link .link__url {
+  .testimonials__link .links__item-header,
+  .testimonials__link .links__item-url {
     writing-mode: horizontal-tb;
     transform: none;
     width: auto;
@@ -1211,7 +1218,7 @@ section.hero .description {
 
   .strong-points-section .gallery .image-wrapper,
   .strong-points-section .gallery__card,
-  .strong-points-section .gallery__card .card__image {
+  .strong-points-section .gallery__card .gallery__card-image {
     height: 450px;
   }
 
