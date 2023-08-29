@@ -749,7 +749,7 @@ section.hero .container {
   width: 28px;
 }
 
-.testimonials .links {
+.testimonials__links-list {
   margin: 0;
   width: 118px;
   list-style: none;
@@ -773,14 +773,15 @@ section.hero .container {
   text-decoration: underline;
 }
 
-.testimonials__link > p {
+.testimonials__link-header,
+.testimonials__link-url {
   height: 190px;
   margin: 0;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
 }
 
-.testimonials__link .links__item-header {
+.testimonials__link-header {
   font-weight: bold;
 }
 
@@ -1170,7 +1171,7 @@ section.hero .container {
     object-fit: cover;
   }
 
-  .testimonials .links {
+  .testimonials__links-list {
     margin-top: 28px;
     padding: 0;
     gap: 20px;
@@ -1179,7 +1180,7 @@ section.hero .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .testimonials .links__item {
+  .testimonials__links-item {
     width: auto;
   }
 
@@ -1188,8 +1189,8 @@ section.hero .container {
     flex-direction: column;
   }
 
-  .testimonials__link .links__item-header,
-  .testimonials__link .links__item-url {
+  .testimonials__link-header,
+  .testimonials__link-url {
     writing-mode: horizontal-tb;
     transform: none;
     width: auto;
