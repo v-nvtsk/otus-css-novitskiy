@@ -498,7 +498,7 @@ section.hero .container {
   align-items: center;
 }
 
-section.hero .wrapper {
+.hero__wrapper {
   width: 690px;
   height: 360px;
   padding: 110px 1%;
@@ -506,7 +506,7 @@ section.hero .wrapper {
   text-align: center;
 }
 
-section.hero .title {
+.hero__title {
   margin: 0;
   font-family: "Playfair Display";
   font-weight: 500;
@@ -515,7 +515,7 @@ section.hero .title {
   text-align: center;
 }
 
-section.hero .description {
+.hero__description {
   margin-top: 14px;
   font-size: 20px;
 }
@@ -976,19 +976,19 @@ section.hero .description {
     height: 764px;
   }
 
-  section.hero .wrapper {
+  .hero__wrapper {
     align-self: start;
     padding: 100px 32px;
     width: 100%;
   }
 
   /* Change font properties */
-  section.hero .title {
+  .hero__title {
     font-weight: 400;
     font-size: 70px;
   }
 
-  section.hero .description {
+  .hero__description {
     font-size: 18px;
   }
 
