@@ -533,7 +533,7 @@ section.hero .container {
   margin: 0;
 }
 
-.biography__container {
+.biography {
   margin-top: 150px;
   height: 840px;
   display: flex;
@@ -992,7 +992,7 @@ section.hero .container {
     font-size: 18px;
   }
 
-  .biography__container {
+  .biography {
     margin: 80px 0 0;
     height: auto;
     flex-direction: column;
