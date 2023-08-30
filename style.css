@@ -611,7 +611,7 @@ section.hero .container {
 }
 
 .person__skill-item:not(:last-of-type)::after {
-  margin: 3px;
+  margin: 2px;
   display: inline-block;
   content: "/";
 }
