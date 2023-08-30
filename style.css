@@ -567,9 +567,11 @@ section.hero .container {
   height: 100%;
   overflow: hidden;
 }
-.biography__image > img {
+
+.biography__photo {
   display: block;
-  max-height: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .person {
