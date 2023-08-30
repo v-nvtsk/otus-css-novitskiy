@@ -550,7 +550,7 @@ section.hero .container {
   margin-left: clamp(10px, 4%, 29px);
 }
 
-.biography__header > .section-title {
+.biography__title {
   align-self: flex-start;
 }
 
