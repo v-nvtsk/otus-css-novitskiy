@@ -1021,7 +1021,8 @@ section.hero .container {
     min-width: auto;
     overflow: hidden;
   }
-  .biography__image > img {
+
+  .biography__photo {
     object-fit: cover;
     width: 100%;
   }
