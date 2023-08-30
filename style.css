@@ -557,13 +557,15 @@ section.hero .container {
 .biography__image {
   order: -1;
   max-width: 50%;
-  max-height: 840px;
   min-width: 250px;
 
   flex-grow: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100%;
+  overflow: hidden;
 }
 .biography__image > img {
   display: block;
