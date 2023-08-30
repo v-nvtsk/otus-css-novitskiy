@@ -576,10 +576,10 @@ section.hero .container {
 
 .person {
   max-width: 40%;
-  justify-content: start;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-top: 175px;
+  /* padding-top: 175px; */
 }
 
 .person__name {
