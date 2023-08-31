@@ -1273,3 +1273,9 @@ section.hero .container {
     margin: 0;
   }
 }
+
+/* bootstrap */
+
+.nav-link.active{
+  font-weight: 700;
+}
