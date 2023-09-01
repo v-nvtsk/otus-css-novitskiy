@@ -528,7 +528,7 @@ section.hero .container {
   color: #000000;
 }
 
-.section-title--vertical {
+.section-title_vertical {
   writing-mode: vertical-lr;
   transform-origin: center center;
   transform: rotate(-180deg);
@@ -698,22 +698,22 @@ section.hero .container {
   width: 100%;
 }
 
-.gallery__card--active {
+.gallery__card_active {
   width: 572px;
 }
 
-.gallery--animated .gallery__card--active .gallery__image-wrapper {
+.gallery_animated .gallery__card_active .gallery__image-wrapper {
   height: 538px;
   width: 572px;
 }
-.gallery--animated
-  .gallery__card:not(.gallery__card--active):hover
+.gallery_animated
+  .gallery__card:not(.gallery__card_active):hover
   .gallery__image-wrapper {
   transform: scale(1.07);
 }
 
-.gallery--animated .gallery__card--active .strong-point__card-image,
-.gallery--animated .gallery__card:hover .strong-point__card-image {
+.gallery_animated .gallery__card_active .strong-point__card-image,
+.gallery_animated .gallery__card:hover .strong-point__card-image {
   position: relative;
   left: 50%;
   top: 50%;
@@ -1102,22 +1102,22 @@ section.hero .container {
 
   /* ГАЛЕРЕЯ НЕ ВЫСТРАИВАЕТСЯ ПРАВИЛЬНО - ИЗОБРАЖЕНИЯ СМЕЩЕНЫ  */
   .designers-section .gallery__card,
-  .designers-section .gallery__card--active {
+  .designers-section .gallery__card_active {
     /* ЗАМЕНИТЬ НА 310PX */
     width: 310px;
     height: 440px;
     overflow: hidden;
   }
 
-  .gallery--animated .gallery__card--active .gallery__image-wrapper,
-  .gallery--animated .gallery__card:hover .gallery__image-wrapper {
+  .gallery_animated .gallery__card_active .gallery__image-wrapper,
+  .gallery_animated .gallery__card:hover .gallery__image-wrapper {
     height: 435px;
     width: 100%;
     transition: none;
   }
 
-  .gallery--animated .gallery__card--active .strong-point__card-image,
-  .gallery--animated .gallery__card:hover .strong-point__card-image {
+  .gallery_animated .gallery__card_active .strong-point__card-image,
+  .gallery_animated .gallery__card:hover .strong-point__card-image {
     position: static;
     transform: none;
     width: 310px;
@@ -1266,7 +1266,7 @@ section.hero .container {
     color: #000000;
   }
 
-  .section-title--vertical {
+  .section-title_vertical {
     writing-mode: horizontal-tb;
     transform-origin: center center;
     transform: none;
