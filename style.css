@@ -487,6 +487,10 @@ header {
   transform: translate(-5%, -70%);
 }
 
+.nav-menu__link.active {
+  text-shadow: 1px 0 1px black;
+}
+
 section.hero {
   height: 630px;
   background: url("./img/hero-background.jpg") no-repeat center/cover;
