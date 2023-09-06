@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let visibleSelector = '';
     for (let el in sectionsY) {
       if ((sectionsY[el].top - sectionsY[el].height < window.scrollY)) {
-        console.log('sectionsY[el].top , sectionsY[el].height, window.scrollY: ', sectionsY[el].top, sectionsY[el].height, window.scrollY);
         visibleSelector = el;
       }
     }
