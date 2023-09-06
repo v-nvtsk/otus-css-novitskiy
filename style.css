@@ -487,7 +487,8 @@ header {
   transform: translate(-5%, -70%);
 }
 
-.nav-menu__link.active {
+.nav-menu__link.active,
+.links__link.active {
   text-shadow: 1px 0 1px black;
 }
 
