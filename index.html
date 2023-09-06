@@ -345,9 +345,19 @@
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            'Playfair-Display': 'Playfair Display',
+            'Bitter-Regular': 'Bitter-Regular',
+            'Bitter': 'Bitter'
+          },
+          backgroundImage: {
+            'hero-bg': "url('./img/hero-background.jpg')",
+            'hero-mobile-bg': "url('./img/hero-background-mobile.jpg')",
+            'testimonials-bg': "url('./img/testimonials-section-image.jpg')",
+          },
           colors: {
             clifford: '#da373d',
-          }
+          },
         }
       }
     }
