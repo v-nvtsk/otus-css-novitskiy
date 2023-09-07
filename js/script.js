@@ -36,3 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 })
+
+function removeClassFromElements(selector, className = 'active') {
+  const elemArray = document.querySelectorAll(selector)
+
+  if (elemArray) {
+    elemArray.forEach(el => el.classList.remove(className))
+  }
+}
