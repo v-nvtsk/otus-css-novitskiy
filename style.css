@@ -963,12 +963,14 @@ section.hero .container {
     text-decoration: none;
     color: #000;
   }
-  .page-footer .links__link:hover {
-    text-decoration: underline;
-  }
 
-  .page-footer .links__link:active,
-  .page-footer .links__link.active {
+  /* Delete it, because it's unnecessary on mobile screen */
+  /* .page-footer .links__link:hover { */
+  /* text-decoration: underline; */
+  /* } */
+
+  /* .page-footer .navigation-link:active, */
+  .page-footer .navigation-link.active {
     font-weight: 700;
   }
 }
