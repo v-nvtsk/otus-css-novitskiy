@@ -483,16 +483,34 @@ header {
   transform: translateY(-30%);
 }
 
-.nav-menu__link:hover::after {
-  border-bottom: 4px solid black;
-  transition: all 0.3s;
-  transform: translateY(-70%);
+@media (hover: hover) and (pointer: fine) {
+  .nav-menu__link:hover::after,
+  .nav-menu__link.clicked::after {
+    border-bottom: 4px solid black;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    transform: translateY(-70%);
+  }
 }
 
-.nav-menu__link.active:after {
+@media (hover: none) {
+  .nav-menu__link.clicked::after {
+    border-bottom: 4px solid black;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    transform: translateY(-70%);
+  }
+}
+
+/* .nav-menu__link:active:after, */
+.nav-menu__link.active {
   text-shadow: 1px 0 1px black;
+}
+
+/* .navigation-link:active:after, */
+.navigation-link.active:after {
   border-bottom: 4px solid black;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   transform: translateY(-70%);
 }
 
