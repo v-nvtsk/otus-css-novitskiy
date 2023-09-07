@@ -489,9 +489,11 @@ header {
   transform: translateY(-70%);
 }
 
-.nav-menu__link.active,
-.links__link.active {
+.nav-menu__link.active:after {
   text-shadow: 1px 0 1px black;
+  border-bottom: 4px solid black;
+  transition: all 0.3s;
+  transform: translateY(-70%);
 }
 
 section.hero {
@@ -965,7 +967,8 @@ section.hero .container {
     text-decoration: underline;
   }
 
-  .page-footer .links__link:active {
+  .page-footer .links__link:active,
+  .page-footer .links__link.active {
     font-weight: 700;
   }
 }
