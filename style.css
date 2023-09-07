@@ -419,6 +419,8 @@ html {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 section,
@@ -477,14 +479,14 @@ header {
   position: absolute;
   content: "";
   height: 100%;
-  width: 110%;
-  transform: translate(-5%, -30%);
+  width: 100%;
+  transform: translateY(-30%);
 }
 
 .nav-menu__link:hover::after {
   border-bottom: 4px solid black;
   transition: all 0.3s;
-  transform: translate(-5%, -70%);
+  transform: translateY(-70%);
 }
 
 section.hero {
