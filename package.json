@@ -32,9 +32,8 @@
     "stylelint-config-standard": "^34.0.0"
   },
   "lint-staged": {
-    "*": "prettier --write",
+    "*": "prettier --check",
     "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.css": "stylelint --fix"
   }
 }

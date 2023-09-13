@@ -1,5 +1,32 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-. "$(dirname -- "$0")/commands/pre-push"
+# . "$(dirname -- "$0")/commands/pre-push"
 
+# Protect master from accidental commits.
+echo -e "===\n>> Pre-commit Hook:: Checking branch name ..."
+branchName=$(git rev-parse --abbrev-ref HEAD)
+
+if [ $branchName == 'master' || $branchName == 'main' ]; then
+  echo -e "\n🚫 Push directly to master branch is not allowed!\n" && exit 1
+fi
+
+if [ $branchName == 'main' || $branchName == 'main' ]; then
+  echo -e "\n🚫 Push directly to main branch is not allowed!\n" && exit 1
+fi
+
+if [ $branchName == 'develop' ]; then
+  echo -e "\n🚫 Cannot push to remote develop branch, please create your own branch and use PR.\n" && exit 1
+fi
+
+if [[ $branchName = *[![:ascii:]]* ]]; then
+  echo -e "\n🚫 Branch name should not have any ascii and upper case letters, please rename your branch name.\n" && exit 1
+fi
+
+if [[ $branchName == *[[:upper:]]* ]]; then
+  echo -e "\n🚫 Branch name should not have any UPPER case letters, please rename your branch name.\n" && exit 1
+fi
+
+echo -e ">> Finish checking branch name.\n==="
+
+exit 0
