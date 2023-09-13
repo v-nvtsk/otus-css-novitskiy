@@ -8,7 +8,11 @@
     "server": "http-server -c-1 .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "prettier": "prettier --write src/**/*.js"
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "prettier": "prettier --write src/**/*.js",
+    "stylelint-css": "npx stylelint \"**/*.{css,scss}\" --fix",
+    "stylelint-html": "npx stylelint \"**/*.{htm,html}\" --fix"
   },
   "author": "",
   "license": "ISC",
@@ -27,17 +31,10 @@
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "./commands/pre-commit && lint-staged",
-      "pre-push": "./commands/pre-push $HUSKY_GIT_STDIN"
-    }
-  },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.css": "stylelint"
+    "*": "prettier --write",
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
