@@ -6,7 +6,8 @@
   "scripts": {
     "start": "http-server -c-1 .",
     "server": "http-server -c-1 .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,17 @@
   },
   "devDependencies": {
     "http-server": "^14.1.1",
-    "prettier": "^3.0.3"
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./commands/pre-commit && lint-staged",
+      "pre-push": "./commands/pre-push $HUSKY_GIT_STDIN"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint"
   }
 }
