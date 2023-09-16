@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  function removeClassFromElements(selector, className = 'active') {
+    const elemArray = document.querySelectorAll(selector)
+
+    if (elemArray) {
+      elemArray.forEach(el => el.classList.remove(className))
+    }
+  }
+
   const sections = document.querySelectorAll('section[id]');
   const anchors = document.querySelectorAll('a[href^="#"]');
   anchors.forEach(el => {
@@ -14,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let scrollTimer = null;
 
-  document.addEventListener('scroll', function (ev) {
+  document.addEventListener('scroll', (() => {
     if (scrollTimer !== null) {
       clearTimeout(scrollTimer)
     }
@@ -30,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
       })
 
-      isVisibleSelectorChanged = document.body.dataset.active !== visibleSelector
+      const isVisibleSelectorChanged = document.body.dataset.active !== visibleSelector
       if (visibleSelector && isVisibleSelectorChanged) {
         if (document.body.dataset?.active) {
           removeClassFromElements('.navigation-link.active', 'active');
@@ -38,20 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.dataset.active = visibleSelector;
         const activeLinks = document.querySelectorAll(`.navigation-link[href="#${visibleSelector}"]`)
         if (activeLinks) {
-          for (let i = 0; i < activeLinks.length; i++) {
+          for (let i = 0; i < activeLinks.length; i += 1) {
             activeLinks[i].classList.add('active')
           }
         }
       }
     }, 100)
 
-  })
+  }))
 })
-
-function removeClassFromElements(selector, className = 'active') {
-  const elemArray = document.querySelectorAll(selector)
-
-  if (elemArray) {
-    elemArray.forEach(el => el.classList.remove(className))
-  }
-}
