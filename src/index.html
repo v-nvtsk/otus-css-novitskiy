@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="page">
+<body class="page" data-active="hero">
   <header class="page__header">
     <div class="burger-menu">
       <span></span>
@@ -21,10 +21,12 @@
     </div>
     <nav class="navigation container">
       <ul class="nav-menu">
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#biography-section">Biography</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#designers">Designers</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#testimonials">Testimonials</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#strong-points">Strong points</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link navigation-link" href="#biography-section">Biography</a>
+        </li>
+        <li class="nav-menu__item"><a class="nav-menu__link navigation-link" href="#designers">Designers</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link navigation-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link navigation-link" href="#strong-points">Strong points</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -270,14 +272,15 @@
     <div class="container">
       <nav class="page-footer__navigation">
         <ul class="page-footer__links links">
-          <li class="links__item"><a class="links__link" href="#biography-section">B</a></li>
-          <li class="links__item"><a class="links__link" href="#designers">D</a></li>
-          <li class="links__item"><a class="links__link" href="#testimonials">T</a></li>
-          <li class="links__item"><a class="links__link" href="#strong-points">S</a></li>
+          <li class="links__item"><a class="links__link navigation-link" href="#biography-section">B</a></li>
+          <li class="links__item"><a class="links__link navigation-link" href="#designers">D</a></li>
+          <li class="links__item"><a class="links__link navigation-link" href="#testimonials">T</a></li>
+          <li class="links__item"><a class="links__link navigation-link" href="#strong-points">S</a></li>
         </ul>
       </nav>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
