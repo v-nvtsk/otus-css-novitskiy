@@ -10,7 +10,7 @@ module.exports = {
     clean: true, // Clean the output directory before emit.
     path: path.resolve(__dirname, 'build'),
     filename: 'main-[hash].js',
-    assetModuleFilename: '[name]-[hash][ext]'
+    assetModuleFilename: 'assets/[name]-[hash][ext]'
   },
   devServer: {
     hot: true,
