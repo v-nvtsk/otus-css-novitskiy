@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
+  target: 'web',
   entry: './src/index.js',
   output: {
     clean: true, // Clean the output directory before emit.
