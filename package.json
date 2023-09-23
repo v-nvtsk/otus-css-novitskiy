@@ -7,8 +7,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "http-server -c-1 .",
-    "server": "http-server -c-1 .",
+    "start": "http-server -c-1 ./build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "prettier --check .",
@@ -17,9 +16,10 @@
     "stylelint-css": "npx stylelint \"**/*.{css,scss}\" --fix",
     "stylelint-html": "npx stylelint \"**/*.{htm,html}\" --fix",
     "build": "webpack -c webpack.config.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d prod",
     "prod": "webpack -c webpack.config.prod.js",
-    "serve": "npx webpack serve"
+    "server": "npx webpack serve"
   },
   "author": "",
   "license": "ISC",
