@@ -6,6 +6,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   mode: 'development',
+  target: 'browserslist',
   entry: './src/index.js',
   output: {
     clean: true, // Clean the output directory before emit.
