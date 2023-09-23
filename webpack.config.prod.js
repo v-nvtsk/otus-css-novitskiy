@@ -11,7 +11,7 @@ module.exports = {
     clean: true, // Clean the output directory before emit.
     path: path.resolve(__dirname, 'prod'),
     filename: 'main-[hash].js',
-    assetModuleFilename: '[name]-[hash][ext]'
+    assetModuleFilename: 'assets/[name]-[hash][ext]'
   },
   module: {
     rules: [
@@ -22,16 +22,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.html$/i,
