@@ -7,7 +7,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "http-server -c-1 ./build",
+    "start": "npm run prod && http-server -c-1 ./prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "prettier --check .",
