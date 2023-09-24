@@ -46,6 +46,7 @@
     "sharp": "^0.32.5",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
+    "terser-webpack-plugin": "^5.3.9",
     "uncss": "^0.17.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
