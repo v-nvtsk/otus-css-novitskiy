@@ -37,6 +37,8 @@
     "http-server": "^14.1.1",
     "husky": "^8.0.0",
     "image-minimizer-webpack-plugin": "^3.8.3",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
     "imagemin-webp-webpack-plugin": "^3.3.6",
     "lint-staged": "^14.0.1",
     "postcss": "^8.4.30",
