@@ -7,11 +7,11 @@
 echo -e "===\n>> Pre-commit Hook:: Checking branch name ..."
 branchName=$(git rev-parse --abbrev-ref HEAD)
 
-if [ $branchName == 'master' || $branchName == 'main' ]; then
+if [ $branchName == 'master']; then
   echo -e "\n🚫 Push directly to master branch is not allowed!\n" && exit 1
 fi
 
-if [ $branchName == 'main' || $branchName == 'main' ]; then
+if [ $branchName == 'main' ]; then
   echo -e "\n🚫 Push directly to main branch is not allowed!\n" && exit 1
 fi
 

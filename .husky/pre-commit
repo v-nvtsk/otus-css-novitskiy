@@ -31,5 +31,4 @@ echo -e ">> Finish checking branch name.\n==="
 
 exit 0
 
-
 npx lint-staged
