@@ -19,7 +19,7 @@
     "predeploy": "npm run prod",
     "deploy": "gh-pages -d prod",
     "prod": "webpack -c webpack.config.prod.js",
-    "server": "npx webpack serve"
+    "server": "npx webpack serve -c webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
