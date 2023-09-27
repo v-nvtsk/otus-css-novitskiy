@@ -28,6 +28,6 @@ jobs:
         npm run prod
         
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.4.0
+      uses: JamesIves/github-pages-deploy-action@4
       with:
         folder: prod # The folder the action should deploy.
