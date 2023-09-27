@@ -911,6 +911,13 @@ section.hero .container {
   .testimonials {
     padding-left: 20px;
   }
+
+  .strong-points-section .gallery__wrapper {
+    grid-template-columns: 450px repeat(4, 335px);
+  }
+    .gallery .strengths {
+    order: -1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1252,9 +1259,9 @@ section.hero .container {
     column-gap: 16px;
   }
 
-  .gallery .strengths {
+  /* .gallery .strengths {
     order: -1;
-  }
+  } */
 
   .strong-points-section .gallery__image-wrapper,
   .strong-point,
