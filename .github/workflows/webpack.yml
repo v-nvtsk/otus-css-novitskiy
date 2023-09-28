@@ -2,8 +2,10 @@ name: NodeJS with Webpack
 
 on:
   pull_request:
-  push:
     branches: [ "master" ]
+    types:
+      - submitted
+  # push:
 
 permissions:
   contents: write
