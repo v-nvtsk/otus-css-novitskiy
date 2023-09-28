@@ -467,7 +467,7 @@ header {
 
 .nav-menu__link {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000000;
   text-decoration: none;
   position: relative;
@@ -483,9 +483,34 @@ header {
   transform: translateY(-30%);
 }
 
-.nav-menu__link:hover::after {
+@media (hover: hover) and (pointer: fine) {
+  .nav-menu__link:hover::after,
+  .nav-menu__link.clicked::after {
+    border-bottom: 4px solid black;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    transform: translateY(-70%);
+  }
+}
+
+@media (hover: none) {
+  .nav-menu__link.clicked::after {
+    border-bottom: 4px solid black;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    transform: translateY(-70%);
+  }
+}
+
+/* .nav-menu__link:active:after, */
+.nav-menu__link.active {
+  text-shadow: 1px 0 1px black;
+}
+
+/* .navigation-link:active:after, */
+.navigation-link.active:after {
   border-bottom: 4px solid black;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   transform: translateY(-70%);
 }
 
@@ -886,6 +911,13 @@ section.hero .container {
   .testimonials {
     padding-left: 20px;
   }
+
+  .strong-points-section .gallery__wrapper {
+    grid-template-columns: 450px repeat(4, 335px);
+  }
+    .gallery .strengths {
+    order: -1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -956,11 +988,14 @@ section.hero .container {
     text-decoration: none;
     color: #000;
   }
-  .page-footer .links__link:hover {
-    text-decoration: underline;
-  }
 
-  .page-footer .links__link:active {
+  /* Delete it, because it's unnecessary on mobile screen */
+  /* .page-footer .links__link:hover { */
+  /* text-decoration: underline; */
+  /* } */
+
+  /* .page-footer .navigation-link:active, */
+  .page-footer .navigation-link.active {
     font-weight: 700;
   }
 }
@@ -1224,9 +1259,9 @@ section.hero .container {
     column-gap: 16px;
   }
 
-  .gallery .strengths {
+  /* .gallery .strengths {
     order: -1;
-  }
+  } */
 
   .strong-points-section .gallery__image-wrapper,
   .strong-point,
