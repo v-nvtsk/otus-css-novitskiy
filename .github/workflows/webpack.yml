@@ -1,9 +1,8 @@
 name: NodeJS with Webpack
 
 on:
-  push:
-    branches: [ "master" ]
   pull_request:
+  push:
     branches: [ "master" ]
 
 permissions:
@@ -35,5 +34,3 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with: 
         folder: prod
-        branch: gh-pages
-   
