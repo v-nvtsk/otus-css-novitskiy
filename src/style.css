@@ -744,7 +744,6 @@ section.hero .container {
   width: 335px;
   overflow: hidden;
   transition: all 0.5s;
-  transform-origin: bottom;
 }
 
 .strong-point__card-image,
@@ -765,6 +764,7 @@ section.hero .container {
   .gallery__card:not(.gallery__card_active):hover
   .gallery__image-wrapper {
   transform: scale(1.07);
+  transform-origin: bottom;
 }
 
 .gallery_animated .gallery__card_active .strong-point__card-image,
