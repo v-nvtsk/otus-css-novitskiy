@@ -7,8 +7,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "http-server -c-1 .",
-    "server": "http-server -c-1 .",
+    "start": "npm run prod && http-server -c-1 ./prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "prettier --check .",
@@ -17,40 +16,56 @@
     "stylelint-css": "npx stylelint \"**/*.{css,scss}\" --fix",
     "stylelint-html": "npx stylelint \"**/*.{htm,html}\" --fix",
     "build": "webpack -c webpack.config.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d prod",
     "prod": "webpack -c webpack.config.prod.js",
-    "serve": "npx webpack serve"
+    "server": "npx webpack serve -c webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^6.8.1",
-    "lodash": "^4.17.21",
-    "style-loader": "^3.3.3"
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "http-server": "^14.1.1",
     "husky": "^8.0.0",
     "image-minimizer-webpack-plugin": "^3.8.3",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
     "imagemin-webp-webpack-plugin": "^3.3.6",
     "lint-staged": "^14.0.1",
+    "postcss": "^8.4.30",
+    "postcss-loader": "^7.3.3",
+    "postcss-uncss": "^0.17.0",
     "prettier": "3.0.3",
     "sharp": "^0.32.5",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "uncss": "^0.17.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "lint-staged": {
-    "*": "prettier --write",
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
+  "*.{js,jsx}": 
+  [
+    "prettier --write",
+    "eslint --fix",
+    "git add"
+  ],
+  "*.{html,css,less,ejs}": 
+  [
+    "prettier --write",
+    "git add"
+  ]
   }
 }

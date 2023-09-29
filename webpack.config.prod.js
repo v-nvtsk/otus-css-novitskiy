@@ -3,35 +3,42 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 // const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: 'development',
+  target: 'browserslist',
   entry: './src/index.js',
   output: {
     clean: true, // Clean the output directory before emit.
     path: path.resolve(__dirname, 'prod'),
     filename: 'main-[hash].js',
-    assetModuleFilename: '[name]-[hash][ext]'
+    assetModuleFilename: 'assets/[name]-[hash][ext]'
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        use: [{
+          loader: 'style-loader',
+        },
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+          }
+        },
+        {
+          loader: 'postcss-loader'
+        }]
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.html$/i,
@@ -68,19 +75,22 @@ module.exports = {
                   // https://sharp.pixelplumbing.com/api-output#avif
                   lossless: true,
                 },
-
-                // png by default sets the quality to 100%, which is same as lossless
-                // https://sharp.pixelplumbing.com/api-output#png
-                png: {},
-
-                // gif does not support lossless compression at all
-                // https://sharp.pixelplumbing.com/api-output#gif
-                gif: {},
               },
             },
-          }
+          }, generator: [
+            {
+              // You can apply generator using `?as=webp`, you can use any name and provide more options
+              preset: "webp",
+              implementation: ImageMinimizerPlugin.imageminGenerate,
+              options: {
+                // Please specify only one plugin here, multiple plugins will not work
+                plugins: ["imagemin-webp"],
+              },
+            },
+          ],
         }
       ),
+      new TerserPlugin(),
       // new ImageminWebpWebpackPlugin(),
     ],
   },

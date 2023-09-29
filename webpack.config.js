@@ -5,12 +5,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
+  target: 'web',
   entry: './src/index.js',
   output: {
     clean: true, // Clean the output directory before emit.
     path: path.resolve(__dirname, 'build'),
     filename: 'main-[hash].js',
-    assetModuleFilename: '[name]-[hash][ext]'
+    assetModuleFilename: 'assets/[name]-[hash][ext]'
   },
   devServer: {
     hot: true,
@@ -25,16 +26,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: '[name]-[hash][ext]'
-        }
       },
       {
         test: /\.html$/i,
