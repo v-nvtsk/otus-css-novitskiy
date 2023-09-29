@@ -4,7 +4,7 @@
 # . "$(dirname -- "$0")/commands/pre-push"
 
 # Protect master from accidental commits.
-echo -e "===\n>> Pre-commit Hook:: Checking branch name ..."
+echo -e "===\n>> Pre-push Hook:: Checking branch name ..."
 branchName=$(git rev-parse --abbrev-ref HEAD)
 
 if [ $branchName == 'master']; then
