@@ -4,7 +4,8 @@ const config = {
     // require('autoprefixer'),
     ['postcss-uncss',
       {
-        html: ['./src/index.html']
+        html: ['./src/index.html'],
+        ignore: ['.navigation-link.active']
       }]
   ]
 }
