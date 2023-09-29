@@ -540,7 +540,13 @@ header {
 
 section.hero {
   height: 630px;
-  background: url('./img/hero-background.jpg?as=webp') no-repeat center/cover;
+  background-image: image-set(
+    url('./img/hero-background.jpg?as=webp') type('image/webp') 1x,
+    url('./img/hero-background.jpg') type('image/jpg') 1x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 section.hero .container {
@@ -1038,11 +1044,16 @@ section.hero .container {
     height: auto;
   }
 
-  /* Change section beckground image and move it to bottom  */
+  /* Change section background image and move it to bottom  */
   section.hero .container {
     width: 100%;
-    background: url('./img/hero-background-mobile.jpg?as=webp') no-repeat bottom
-      center/cover;
+    background-image: image-set(
+      url('./img/hero-background-mobile.jpg?as=webp') type('image/webp') 1x,
+      url('./img/hero-background-mobile.jpg') type('image/jpg') 1x
+    );
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
     height: 764px;
   }
 
