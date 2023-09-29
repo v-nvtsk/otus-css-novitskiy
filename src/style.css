@@ -941,7 +941,8 @@ section.hero .container {
   .strong-points-section .gallery__wrapper {
     grid-template-columns: 450px repeat(4, 335px);
   }
-    .gallery .strengths {
+
+  .gallery .strengths {
     order: -1;
   }
 }
