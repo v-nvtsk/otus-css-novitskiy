@@ -30,6 +30,14 @@ npm run server
 npm run deploy
 ```
 
+## Lighthouse results
+Основная проблема в Cumulative Layout shift.
+### Desktop
+![Alt text](./lighthouse/LH-desktop.png)
+
+### Mobile
+![Alt text](./lighthouse/LH-mobile.png)
+
 ## Содержание курса и домашних заданий
 
 ### [1 Введение в Web](https://otus.ru/learning/234741//#)
