@@ -33,10 +33,10 @@ npm run deploy
 ## Lighthouse results
 Основная проблема в Cumulative Layout shift.
 ### Desktop
-![Alt text](./lighthouse/LH-desktop.png)
+![Lighthouse desktop metrics](./lighthouse/LH-desktop.png)
 
 ### Mobile
-![Alt text](./lighthouse/LH-mobile.png)
+![Lighthouse mobile metrics](./lighthouse/LH-mobile.png)
 
 ## Содержание курса и домашних заданий
 
