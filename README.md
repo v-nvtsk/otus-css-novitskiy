@@ -2,7 +2,7 @@
 
 ## Описание работы
 
-Вёрстка проекта выполнена по макету: [ссылка](https://www.figma.com/file/IsT8OAe334nd2nwc9pKCu8/Otus-mocks-2023-08-10?type=design&node-id=9591%3A3&mode=design&t=e7XUyL7rQYgbnGEt-1) по принципу desktop-first с адаптацией для планшета и мобильных устройств. В ветках bootstrap и tailwind верстка выполнена с применением соответствующих ui-библиотек.
+Вёрстка проекта выполнена по макету ([макет](https://www.figma.com/file/IsT8OAe334nd2nwc9pKCu8/Otus-mocks-2023-08-10?type=design&node-id=9591%3A3&mode=design&t=e7XUyL7rQYgbnGEt-1)) с применением desktop-first подхода и адаптацией для планшета и мобильных устройств. В ветках bootstrap и tailwind верстка выполнена с применением соответствующих ui-библиотек.
 Сборка проекта выполняется сборщиком Webpack. Описание скриптов в разделе ["Скрипты для сборки проекта"](#скрипты-для-сборки-проекта).
 Деплой выполняется с помощью npm пакета [gh-pages](https://www.npmjs.com/package/gh-pages)
 
