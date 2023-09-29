@@ -51,7 +51,8 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: path.resolve(__dirname, './src/index.html'),
-    filename: 'index.html'
+    filename: 'index.html',
+    inlineSource: '.(js|css)$' // embed all javascript and css inline
   })],
   optimization: {
     minimize: true,
