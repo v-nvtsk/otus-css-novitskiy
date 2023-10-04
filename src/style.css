@@ -594,7 +594,7 @@ section.hero .container {
   margin-top: 150px;
   height: 840px;
   display: flex;
-  padding: 0 min(10%, 137px);
+  padding: 0 min(10vw, 137px);
   position: relative;
 }
 
@@ -625,7 +625,6 @@ section.hero .container {
 
 .biography__photo {
   display: block;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -751,7 +750,6 @@ section.hero .container {
   width: 335px;
   overflow: hidden;
   transition: all 0.5s;
-  transform-origin: bottom;
 }
 
 .strong-point__card-image,
@@ -772,6 +770,7 @@ section.hero .container {
   .gallery__card:not(.gallery__card_active):hover
   .gallery__image-wrapper {
   transform: scale(1.07);
+  transform-origin: bottom;
 }
 
 .gallery_animated .gallery__card_active .strong-point__card-image,
@@ -947,7 +946,8 @@ section.hero .container {
   .strong-points-section .gallery__wrapper {
     grid-template-columns: 450px repeat(4, 335px);
   }
-    .gallery .strengths {
+
+  .gallery .strengths {
     order: -1;
   }
 }
